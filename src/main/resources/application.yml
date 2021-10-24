@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: root
+    password: root
+    driverClassname: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: create
+    generate-ddl: true
+    hibernate.dialect: org.hibernate.dialect.H2Dialect
+    open-in-view: true
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+      setting:
+        trace: true
+      web-allow-others: true
+
+server:
+  port: 2020
+
